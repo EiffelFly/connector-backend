@@ -49,6 +49,6 @@ RUN mkdir /airbyte && chown -R nobody:nogroup /airbyte
 USER nobody:nogroup
 
 # Download vdp protocol YAML file
-RUN curl https://raw.githubusercontent.com/instill-ai/vdp/main/protocol/vdp_protocol.yaml -so /etc/vdp/vdp_protocol.yaml
+RUN curl https://github.com/instill-ai/vdp/blob/775803cc95f65530cff92d24311cb6bc18925a34/protocol/vdp_protocol.yaml -so /etc/vdp/vdp_protocol.yaml
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]

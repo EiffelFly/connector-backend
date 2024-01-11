@@ -19,7 +19,7 @@ RUN mkdir /vdp
 RUN mkdir /airbyte
 
 # Download vdp protocol YAML file
-ADD https://raw.githubusercontent.com/instill-ai/vdp/main/protocol/vdp_protocol.yaml /etc/vdp/vdp_protocol.yaml
+ADD https://github.com/instill-ai/vdp/blob/775803cc95f65530cff92d24311cb6bc18925a34/protocol/vdp_protocol.yaml /etc/vdp/vdp_protocol.yaml
 
 FROM gcr.io/distroless/base:nonroot
 
